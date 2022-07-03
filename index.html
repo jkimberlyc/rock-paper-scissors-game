@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <script
+      src="https://kit.fontawesome.com/72268adad8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Rock, Papers, Scissors</title>
+  </head>
+  <body class="bg-dark text-white">
+    <div class="container justify-content-center text-center mt-3">
+      <div class="d-flex flex-sm-column">
+        <div class="d-flex flex-column w-100 text-dark" id="battleground">
+          <div class="m-2">
+            <h1>Scoreboard</h1>
+            <div
+              class="float-start display-6 fw-bold ps-5 sticky-top"
+              id="playerScore"
+            >
+              You:
+            </div>
+            <div
+              class="float-end display-6 fw-bold pe-5 sticky-top"
+              id="botScore"
+            >
+              Bot:
+            </div>
+          </div>
+          <div class="display-2 text-warning fw-bolder" id="result">
+            CHOOSE A MOVE TO START
+          </div>
+          <div class="d-flex flex-row justify-content-center mt-3 mb-5">
+            <div
+              class="d-flex flex-column justify-content-center"
+              id="playerSide"
+            >
+              <div class="m-0 p-0 invisible" style="font-size: 53.5px">
+                Move
+              </div>
+              <img
+                src="img/playerIdle.gif"
+                id="playerCharacter"
+                class="player img-fluid mx-2"
+                width="150px"
+                height="150px"
+              />
+              <div class="h3 pe-5">You</div>
+            </div>
+            <div class="mt-5 mx-5 pt-5">
+              <img
+                class="img-fluid"
+                width="80px"
+                height="80px"
+                src="img/vs.png"
+              />
+            </div>
+            <div class="d-flex flex-column" id="botSide">
+              <div class="m-0 p-0 invisible" style="font-size: 53.5px">
+                Move
+              </div>
+              <img
+                src="img/botIdle.gif"
+                id="botCharacter"
+                class="bot img-fluid mx-2"
+                width="150px"
+                height="150px"
+              />
+              <div class="h3 ps-5">Dogebot</div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-row w-100 text-dark">
+          <div
+            class="d-flex flex-row justify-content-center w-25"
+            id="leftMenu"
+          >
+            <div class="">
+              <div class="h4 text-white pb-3 w-100" id="history">
+                Match History
+              </div>
+            </div>
+          </div>
+          <div class="text-start w-75 ms-1" id="optionsMenu">
+            <div class="h4 text-white px-3">Choose a move:</div>
+            <ul class="list-inline pb-4 pt-2">
+              <li>
+                <button
+                  class="btn w-100 text-center fs-5 py-1"
+                  id="rockBtn"
+                  title="Rock"
+                  onclick="fight(0)"
+                >
+                  Rock Slingshot
+                </button>
+              </li>
+              <li>
+                <button
+                  class="btn w-100 text-center fs-5 py-1"
+                  id="paperBtn"
+                  title="Paper"
+                  onclick="fight(1)"
+                >
+                  Paper Shield
+                </button>
+              </li>
+              <li>
+                <button
+                  class="btn w-100 text-center fs-5 py-1"
+                  id="scissBtn"
+                  title="Scissors"
+                  onclick="fight(2)"
+                >
+                  Scissors Strike
+                </button>
+              </li>
+              <li>
+                <a class="btn w-100 text-center fs-5 py-1" href="index.html"
+                  >Fleet Foot</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <span class="text-decoration-none"
+        >Pixel Art by Jamie Cross, Vicente Nitti,
+        https://craftpix.net/file-licenses/ | All images are copyright to their
+        respective owners.</span
+      >
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+@import"https://fonts.googleapis.com/css2?family=VT323&display=swap";
+
+// $body-bg:rgb(201, 216, 159);
+
+* {
+    font-family: 'VT323', monospace;
+}
+
+ul {
+    li {
+        margin: 0.1rem 0;
+    }
+
+    li:hover {
+        // background-color: rgb(255, 253, 147);
+        background-image: url('../img/btn-hover.png');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        
+        button,a {
+            // font-weight: bold;
+            font-size: large;
+            letter-spacing: 1px;
+            transition: .1s ease-in;
+            color: white !important;
+            
+        }
+    }
+}
+
+#battleground {
+    background-image: url('../img/main-bg.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    border: 5px solid rgb(134, 167, 73);
+    margin: 5px 0;
+}
+
+#leftMenu {
+    background-image: url('../img/left-bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#optionsMenu{
+    background-image: url('../img/options-bg.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#result {
+    text-shadow: 4px 4px black;
+    animation: blink 1s linear infinite;
+}
+
+#playerMove{
+    background-image: url("../img/dialog.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+#playerMove, #botMove{
+    background-image: url("../img/dialog.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.bot, #botMove {
+    transform: rotateY(180deg);
+}
+
+@keyframes blink{
+    0%{opacity: 0;}
+    30%{opacity: .7;}
+    100%{opacity: 1;}
+    }
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss"
