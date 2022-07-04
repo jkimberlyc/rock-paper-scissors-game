@@ -56,14 +56,14 @@ function fight(playerChoice){
         }
     }
     else if(playerChoice===2){
-        if(botChoice==0){
+        if(botChoice===0){
             result += "YOU LOSE!";
             botScoreCount++;
             botWin();
             playerLoss();
             winner="bot";
         }
-        else if(botChoice==1){
+        else if(botChoice===1){
             result += "YOU WIN!"
             playerScoreCount++;
             botLoss();
